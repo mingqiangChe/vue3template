@@ -13,7 +13,7 @@ export default defineConfig({
     vue(),
     ElementPlus(),
     AutoImport({
-      imports: ['vue'],
+      imports: ['vue', 'pinia'],
       resolvers: [ElementPlusResolver()],
       dts: resolve(__dirname, 'src/auto-imports.d.ts'),
     }),
