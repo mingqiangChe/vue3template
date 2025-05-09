@@ -53,4 +53,11 @@ export default defineConfig({
   optimizeDeps: {
     include: ['unplugin-icons'],
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import "@/styles/variables.scss";`,
+      },
+    },
+  },
 });
